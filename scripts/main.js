@@ -1,30 +1,44 @@
-let myImage = document.querySelector('img');
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
 
-myImage.onclick = function () {
-	let mySrc = myImage.getAttribute('src');
-	if (mySrc === 'images/crypto.png') {
-		myImage.setAttribute('src', 'images/crypto1.jpg');
-	} else {
-		myImage.setAttribute('src', 'images/crypto.png');
-	}
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
 }
 
-let myButton = document.querySelector('button');
-let myheading = document.querySelector('h1');
-
-function setUserName() {
-	let myName = prompt('Please enter your name.');
-	localStorage.setItem('name', myName);
-	myheading.textContent = 'Mozilla is cool, ' + myName;
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
 }
 
-if (!localStorage.getItem('name')) {
-	setUserName();
-} else {
-	let storedName = localStorage.getItem('name');
-	myHeading.textContent = 'Mozilla is cool, ' + storedName;
-}
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  let isClickInside = menu.contains(e.target);
 
-myButton.onclick = function () {
-	setUserName();
+  if (!isClickInside && menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+  }
 }
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false);
