@@ -13,7 +13,7 @@ a {color: white; text-decoration: none;}
 .item.button {padding: 9px 5px;}
 .item:not(.button) a:hover,.item a:hover::after {color: #ccc;}
 
-html {
+/* html {
 	background-color: #615B5B;
 	font-size: 30px;
 	font-family: 'oswald';
@@ -75,4 +75,4 @@ button:hover {
 
 li {
 	display: inline;
-}
+} */
