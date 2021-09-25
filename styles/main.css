@@ -13,13 +13,14 @@ h1 {
 	text-align: center;
 }
 
-p, li {
+p,
+li {
 	font-size: 20px;
 	line-height: 2;
 	letter-spacing: 1px;
 }
 
-body { 
+body {
 	width: 1120px;
 	margin: 0 auto;
 	background-color: #ede9e8;
@@ -37,7 +38,7 @@ input[type="password"] {
 	color: red;
 }
 
-section[class="post"]{
+section[class="post"] {
 	background-color: rgb(184, 184, 202);
 }
 
@@ -55,4 +56,8 @@ button:hover {
 .post a:hover {
 	text-decoration: underline;
 	color: red;
+}
+
+li {
+	display: inline;
 }
