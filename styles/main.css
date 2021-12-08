@@ -6,8 +6,9 @@ EDIT ON
   padding: 0;
   margin: 0;
 }
+
 body {
-  font-family: apple-system, BlinkMacSystemFont, sans-serif;;
+  font-family: apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
 }
 
@@ -17,16 +18,20 @@ h1 {
 }
 
 .home {
-  background-image: url(..\images\blob.gif);
+  width: 900px;
+  height: 1000px;
+  background-image: url(/images/blob.gif);
+  background-repeat: no-repeat;
 }
 
 .homeButton {
-  font-weight: 100;
+  outline:white solid 0.5px;
   padding: 10px 25px;
   font-size: 20px;
   position:absolute;
-  background: rgba:208, 208, 208, 0.9;
-  color:white;
+  background: rgba:208, 208, 208, 0.6;
+  font-weight: bold;
+  color: white;
   border: none;
   width: 200px;
   height: 100px;
