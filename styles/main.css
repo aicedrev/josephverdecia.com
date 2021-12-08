@@ -13,18 +13,31 @@ body {
 }
 
 h1 {
-  color: grey;
-  position: center;
+  color: white;
+  position: absolute;
+  margin-top: 255px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 255px;
 }
 
 .home {
-  width: 900px;
-  height: 1000px;
+  position: absolute;
+  width: 475px;
+  height: 821px;
+  left:0px;
+  top:0;
+  right:0;
   background-image: url(/images/blob.gif);
   background-repeat: no-repeat;
 }
 
 .homeButton {
+  position:absolute;
+  margin-top: 480px;
+  margin-right: 94px;
+  margin-left: 94px;
+  margin-bottom: 288px;
   outline:white solid 0.5px;
   padding: 10px 25px;
   font-size: 20px;
