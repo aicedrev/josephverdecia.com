@@ -50,8 +50,8 @@ h1 {
   background: rgba(255, 255, 255, 0.6);
   color: white;
   font-size: 20px;
-  font-weight: bold;
   border: none;
+  font-weight: bold;
   min-width: 100px;
   min-height: 55px;
   border-radius: 15px;
@@ -60,5 +60,10 @@ h1 {
 
 .homeButton:hover {
   background: rgba(82, 82, 82, 0.2);
-  
+  transition-duration: 1s;
+}
+
+.homeButton:active {
+  background: rgba(82, 82, 82, 0.2);
+  transition-duration: 1s;
 }
