@@ -1,6 +1,6 @@
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
+
 /* Basic styling */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,9 +10,12 @@ EDIT ON
 body {
   font-family: apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
+  width: 375px;
+  height: 2483px;
 }
 
 h1 {
+  font-size: 60px;
   color: white;
   position: absolute;
   margin-top: 255px;
@@ -22,14 +25,19 @@ h1 {
 }
 
 .home {
-  position: absolute;
-  width: 475px;
-  height: 821px;
-  left:0px;
-  top:0;
-  right:0;
-  background-image: url(/images/blob.gif);
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  min-height: 821px;
+  overflow:hidden;
+}
+
+.homebackgroundimage {
+  flex-shrink: 0;
+  min-width: 100%
+  min-height: 100%;
+
 }
 
 .homeButton {
