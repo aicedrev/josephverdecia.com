@@ -8,15 +8,15 @@
 }
 
 body {
-  font-family: apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', sans-serif;
   background:black;
   font-size: 16px;
 }
 
 h1 {
   font-size: 60px;
-  font-family: Gilroy;
   text-align: center;
+  font-weight:bolder;
   width: 327px;
   height: 185px;
   top: 255px;
