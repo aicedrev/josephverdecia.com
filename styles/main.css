@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+canvas {
+  width: 0%;
+  height: 0%;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background:black;
@@ -25,7 +30,6 @@ h1 {
 
 .text-white {
   color: white;
- 
 }
 
 .home {
@@ -40,15 +44,14 @@ h1 {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  
 }
 
 
 .homeButton { 
   margin-top: 50px;
-  padding: 10px 25px;
+  padding: 10px 40px;
   background: rgba(255, 255, 255, 0.6);
-  color: white;
+  color:rgb(255, 255, 255);
   font-size: 20px;
   border: none;
   font-weight: bold;
@@ -60,10 +63,10 @@ h1 {
 
 .homeButton:hover {
   background: rgba(82, 82, 82, 0.2);
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
 
 .homeButton:active {
   background: rgba(82, 82, 82, 0.2);
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
