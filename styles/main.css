@@ -82,11 +82,11 @@ nav ul {
   position: fixed;
   top: 95%;
   right: 60%;
-  max-width: 400px;
+  max-width: 100%;
 }
 
 nav ul li {
 display: inline;
 list-style: none;
-width: 400px;
+width: 100%;
 }
