@@ -19,10 +19,11 @@ body {
 }
 
 h1 {
+  line-height: 65px;
   font-size: 60px;
   letter-spacing: -3px;
   text-align: center;
-  font-weight:bolder;
+ 
   width: 327px;
   height: 185px;
   top: 255px;
@@ -69,4 +70,23 @@ h1 {
 .homeButton:active {
   background: rgba(82, 82, 82, 0.2);
   transition-duration: 0.8s;
+}
+
+/* Navigation Menu */
+nav {
+  width: 0%;
+  height: 0%;
+}
+
+nav ul {
+  position: fixed;
+  top: 890px;
+  right: 60px;
+  width: 400px;
+}
+
+nav ul li {
+display: inline;
+list-style: none;
+width: 400px;
 }
