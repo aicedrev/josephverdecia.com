@@ -80,9 +80,9 @@ nav {
 
 nav ul {
   position: fixed;
-  top: 890px;
-  right: 60px;
-  width: 400px;
+  top: 95%;
+  right: 60%;
+  max-width: 400px;
 }
 
 nav ul li {
