@@ -18,20 +18,32 @@ body {
   font-size: 16px;
 }
 
+/* Typography */
+
 h1 {
   line-height: 65px;
   font-size: 60px;
   letter-spacing: -3px;
   text-align: center;
- 
   width: 327px;
   height: 185px;
   top: 255px;
 }
 
-.text-white {
+h2 {
+  margin-top: 10%;
+  text-align: center;
+  line-height: 65px;
+  font-size: 45px;
+  letter-spacing: -3px;
+  text-align: center;
   color: white;
+  height: 200px;
+  top: 255px;
 }
+
+
+/* Sections of Home */
 
 .home {
   display: flex;
@@ -39,7 +51,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/blob.gif);
+  background-image: url(/images/pinkCube.gif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,6 +83,34 @@ h1 {
   background: rgba(82, 82, 82, 0.2);
   transition-duration: 0.8s;
 }
+
+/* Projects Section */
+.projects {
+display: flex;
+width: 100%;
+}
+
+.pills {
+
+}
+
+.cube-1 {
+  
+  }
+
+.cube-2 {
+
+}
+
+.cube-3 {
+
+}
+
+
+.text-white {
+  color: white;
+}
+
 
 /* Navigation Menu */
 nav {
