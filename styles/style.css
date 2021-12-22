@@ -11,10 +11,6 @@
   margin: 0;
 }
 
-canvas {
-  width: 0%;
-  height: 0%;
-}
 
 body {
   font-family: "Inter", sans-serif;
@@ -22,7 +18,15 @@ body {
   font-size: 16px;
 }
 
+img {
+  border-radius: 15px;
+  width: 500px;
+  height: 400px;
+  margin-left: 50px;
+}
+
 /* Typography */
+
 .text-white {
   color: white;
 }
@@ -48,15 +52,9 @@ h2 {
   top: 255px;
 }
 
-img {
-  border-radius: 15px;
-  width: 500px;
-  height: 400px;
-  margin-left: 50px;
-}
+
 
 /* Sections of Home */
-
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -96,45 +94,26 @@ img {
 }
 
 /* Projects Section */
+
+
 .projects {
   display: flex;
   flex-direction: column;
+  background-color: grey;
 }
 
 .project {
   display: flex;
   flex-direction: row;
-  -ms-flex-align: center;
-  justify-content: center;
-}
-
-.project img {
-  -ms-flex-align: center;
-}
-
-/* Navigation Menu */
-nav {
-  width: 0%;
-  height: 0%;
-}
-
-nav ul {
-  position: fixed;
-  top: 95%;
-  right: 60%;
-  max-width: 100%;
-}
-
-nav ul li {
-  display: inline;
-  list-style: none;
-  width: 100%;
 }
 
 /* Media Querys */
 
 @media screen (max-width: 780px) {
   .project {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    
   }
 }
