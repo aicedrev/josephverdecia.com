@@ -1,3 +1,8 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Basic styling */
 
 * {
@@ -18,6 +23,9 @@ body {
 }
 
 /* Typography */
+.text-white {
+  color: white;
+}
 
 h1 {
   line-height: 65px;
@@ -35,10 +43,16 @@ h2 {
   line-height: 65px;
   font-size: 45px;
   letter-spacing: -3px;
-  text-align: center;
   color: white;
   height: 200px;
   top: 255px;
+}
+
+img {
+  border-radius: 15px;
+  width: 500px;
+  height: 400px;
+  margin-left: 50px;
 }
 
 /* Sections of Home */
@@ -84,26 +98,18 @@ h2 {
 /* Projects Section */
 .projects {
   display: flex;
-  width: 100%;
+  flex-direction: column;
 }
 
-.pills {
+.project {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  justify-content: center;
 }
 
-.project-1 {
-  width: 100%;
-}
-
-.project-2 {
-  width: 100%;
-}
-
-.project-3 {
-  width: 100%;
-}
-
-.text-white {
-  color: white;
+.project img {
+  -ms-flex-align: center;
 }
 
 /* Navigation Menu */
@@ -123,4 +129,12 @@ nav ul li {
   display: inline;
   list-style: none;
   width: 100%;
+}
+
+/* Media Querys */
+
+@media screen (max-width: 780px) {
+  .project {
+    flex-direction: column;
+  }
 }
