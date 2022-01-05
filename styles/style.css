@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Basic styling */
+/* Basic Elements */
 
 * {
   box-sizing: border-box;
@@ -19,9 +19,6 @@ body {
 
 img {
   border-radius: 15px;
-
-  height: 400px;
-  
 }
 
 /* Typography */
@@ -30,7 +27,7 @@ img {
   color: white;
 }
 
-h1 {
+.heading-h1 {
   line-height: 65px;
   font-size: 60px;
   letter-spacing: -3px;
@@ -41,7 +38,8 @@ h1 {
 }
 
 h2 {
-  margin-top: 10%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   text-align: center;
   line-height: 65px;
   font-size: 45px;
@@ -58,7 +56,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/pinkCube.gif);
+  background-image: url(/images/webGl.gif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,48 +65,53 @@ h2 {
 }
 
 .homeButton {
-  margin-top: 50px;
-  padding: 10px 40px;
-  background: rgba(255, 255, 255, 0.6);
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  border: none;
+  padding: 1em 2em;
+  margin-top:2em;
+  background: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  border: 0.20em solid;
+  border-radius: 0.5em;
   font-weight: bold;
-  min-width: 100px;
-  min-height: 55px;
-  border-radius: 15px;
-  text-decoration: none;
+  transition:all 0.25s;
 }
 
 .homeButton:hover {
-  background: rgba(82, 82, 82, 0.2);
-  transition-duration: 0.8s;
+background: #ffffff;
+border-color: #ffffff;
+color: rgb(0, 0, 0);
+box-shadow: 0 0.6em 0.6em -0.4em #dddddb;
+transform: translateY(-0.26em)
 }
 
-.homeButton:active {
-  background: rgba(82, 82, 82, 0.2);
-  transition-duration: 0.8s;
-}
 
 /* Projects Section */
 
 .projects {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   background-color: grey;
-  justify-content: center;
-  align-items: center;
-}
-.project {
-  width: 450px;
-  -ms-flex-align: end;
 }
 
-.project img {
+.project {
   width: 100%;
-  
+}
+
+.project .threedmodels {
+  display: flex;
+  -ms-flex-align: center;
+}
+
+.project .threedmodels img {
+  width: 500px;
+  height: 400px;
 }
 
 /* Media Querys */
-
+@media screen and (max-width:240px) {
+  .project img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 /* Media Queries: Tablet Landscape */
