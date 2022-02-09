@@ -29,7 +29,7 @@ img {
 
 .heading-h1 {
   line-height: 65px;
-  font-size: 60px;
+  font-size: 4rem;
   letter-spacing: -3px;
   text-align: center;
   width: 327px;
@@ -42,7 +42,7 @@ h2 {
   padding-bottom: 6rem;
   text-align: center;
   line-height: 65px;
-  font-size: 45px;
+  font-size: 3rem;
   letter-spacing: -3px;
   color: white;
   height: 200px;
@@ -69,7 +69,7 @@ h2 {
   margin-top:2em;
   background: none;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   border: 0.20em solid;
   border-radius: 0.5em;
   font-weight: bold;
@@ -81,7 +81,8 @@ background: #ffffff;
 border-color: #ffffff;
 color: rgb(0, 0, 0);
 box-shadow: 0 0.6em 0.6em -0.4em #dddddb;
-transform: translateY(-0.26em)
+transform: translateY(-0.26em);
+cursor: pointer;
 }
 
 
@@ -89,19 +90,15 @@ transform: translateY(-0.26em)
 
 .projects {
   width: 100%;
-  background-color: grey;
+  background-color: rgb(138, 138, 138);
 }
 
 .project {
   width: 100%;
 }
 
-.project .threedmodels {
-  display: flex;
-  -ms-flex-align: center;
-}
 
-.project .threedmodels img {
+.project img {
   width: 500px;
   height: 400px;
 }
