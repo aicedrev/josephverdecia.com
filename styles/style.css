@@ -1,8 +1,3 @@
-/* tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Basic Elements */
 
 * {
@@ -86,29 +81,8 @@ cursor: pointer;
 }
 
 
-/* Projects Section */
-
-.projects {
-  width: 100%;
-  background-color: rgb(138, 138, 138);
-}
-
-.project {
-  width: 100%;
-}
+/* Projects */
 
 
-.project img {
-  width: 500px;
-  height: 400px;
-}
 
-/* Media Querys */
-@media screen and (max-width:240px) {
-  .project img {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-/* Media Queries: Tablet Landscape */
+
