@@ -178,7 +178,7 @@ img{
 @media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -191,15 +191,80 @@ img{
 
 .nav__list{
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+}
+
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.nav__close:hover{
+    color: var(--first-color-alt);
 }
 /* show menu */
-
+.show-menu{
+    bottom: 0;
+}
 /* Active link */
 
 /* Change background header */
 
 /*==================== HOME ====================*/
+.home__container{
+    gap: 1rem;
+}
 
+.home__content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home__social-icon{
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home__social-icon:hover{
+    color: var(--first-color-alt);
+}
+
+.home__blob{
+    width: 200px;
+    fill: var(--first-color);
+}
+
+.home__blob-img{
+    width: 170px;
+}
 /*==================== BUTTONS ====================*/
 
 /*==================== ABOUT ====================*/
