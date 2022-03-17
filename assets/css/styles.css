@@ -564,8 +564,8 @@ font-size: var(--h1-font-size);
     transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
-.qualification__container{
-    
+.qualification-title-container{
+    text-align: right;
 }
 
 .qualification__tabs{
