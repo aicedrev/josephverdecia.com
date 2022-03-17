@@ -1,0 +1,28 @@
+{
+  "name": "josephverdecia.com-backup1",
+  "version": "1.0.0",
+  "description": "Responsive Personal Portfolio Website Using HTML CSS And JavaScript | Dark/Light Mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicedrev/Josephverdecia.com-backup1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aicedrev/Josephverdecia.com-backup1/issues"
+  },
+  "homepage": "https://github.com/aicedrev/Josephverdecia.com-backup1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
